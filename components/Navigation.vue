@@ -450,9 +450,10 @@ nav .contacto a:hover {
     position: absolute;
     width: 170px;
     height: 0px;
-    border-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     transform: translate(70px, 40px);
-    padding-top: 20px;
+    background-color: rgb(142, 142, 142);
 }
 
 .dropdown .dropdown-links {
@@ -461,15 +462,19 @@ nav .contacto a:hover {
 
 .nav-links p:hover~.dropdown,
 .dropdown:hover {
-    padding-top: 40px;
+    padding-top: 10px;
     height: 80px;
-    box-shadow: 0px 10px 3px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 1px 1px rgba(0, 0, 0, 0.1);
     opacity: 1;
+    background-color: rgb(255, 255, 255);
+
 }
 
 .dark-mode .dropdown:hover,
 .dark-mode .nav-links p:hover~.dropdown {
-    box-shadow: 0px 10px 3px 1px rgba(202, 202, 202, 0.1);
+    box-shadow: 0px 3px 3px 1px rgba(202, 202, 202, 0.1);
+    background-color: #151515;
+
 }
 
 @media (max-width:900px) {
