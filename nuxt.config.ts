@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     '~/assets/css/main.css',
     '~/assets/css/fonts.css'
   ],
-  modules: ["@nuxt/image"],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
@@ -47,7 +46,7 @@ export default defineNuxtConfig({
         type: 'text/javascript',
         defer: true
       },
-      { src: 'https://www.googletagmanager.com/gtag/js?id=G-XRT72ZGBB4', async: true }],
+      { src: 'https://www.googletagmanager.com/gtag/js?id=G-XRT72ZGBB4', defer: true }],
       "noscript": [],
       "title": "Music lessons - Irene Buceta",
       htmlAttrs: {
