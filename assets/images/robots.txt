@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://clasespianomadrid.com/sitemap.xml
+Sitemap: https://pianolessonsmadrid.com/sitemap.xml

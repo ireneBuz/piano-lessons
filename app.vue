@@ -1,7 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-
 const isDarkMode = ref(false)
 
 const updateThemeColor = () => {
@@ -26,20 +25,12 @@ const toggleDarkMode = () => {
 }
 </script>
 
-
-
-
 <template>
   <div :class="{ 'dark-mode': isDarkMode }" class="transition-container">
     <header>
-
       <Navigation :isDarkMode="isDarkMode" :toggleDarkMode="toggleDarkMode" />
       <NuxtPage />
       <Footer :isDarkMode="isDarkMode" />
     </header>
   </div>
 </template>
-
-
-
-<style></style>
