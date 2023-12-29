@@ -137,7 +137,10 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
                 </div>
 
 
-
+                <RouterLink to="/musical-blog" :class="{ 'active-link': $route.path === '/musical-blog' }"
+                    aria-label="Blog">
+                    Blog
+                </RouterLink>
 
                 <RouterLink to="/courses" :class="{ 'active-link': $route.path === '/courses' }" aria-label="Courses">
                     Courses
@@ -180,6 +183,10 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
                     :class="{ 'active-link': $route.path === '/musical-theory-lessons' }"
                     aria-label="Musical theory lessons">
                     Musical theory lessons
+                </RouterLink>
+                <RouterLink to="/musical-blog" @click="closeMenu"
+                    :class="{ 'active-link': $route.path === '/musical-blog' }" aria-label="Blog">
+                    Blog
                 </RouterLink>
                 <RouterLink to="/courses" @click="closeMenu" :class="{ 'active-link': $route.path === '/courses' }"
                     aria-label="Courses">
