@@ -24,11 +24,11 @@ export default defineNuxtConfig(() => {
           },
           {
             name: 'description',
-            content: 'Clases de música en Madrid. Teoría musical y clases de piano, presenciales y online. ¡Aprende música con nosotros!. Escuela Irene Buceta'
+            content: 'Piano classes in Madrid. Musical theory and piano lessons, in-person and online. Learn music with us! Irene Buceta School'
           },
           {
             name: 'keywords',
-            content: 'clases de música, teoría musical, piano, Madrid, presenciales, online, Irene Buceta'
+            content: 'music classes, piano lessons, music theory classes, piano classes, music lessons, Madrid, in-person classes, online classes, Irene Buceta'
           }
         ],
         link: [
