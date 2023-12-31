@@ -3,6 +3,10 @@ import musicalTheoryImg from '~/assets/images/musicalTheoryImg.webp'
 import closeModalIcon from '~/assets/images/closeModal.svg'
 import { ref } from 'vue';
 import { gsap } from 'gsap'
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+const locationId = route.params.location?.charAt(0).toUpperCase() + route.params.location?.slice(1)
 
 let showModal = ref(false);
 
@@ -47,7 +51,7 @@ const leave = (el, done) => {
     <div class="musical-classes">
       <div class="musical-classes-info">
         <h2>
-          Discover the fascinating world of music theory!
+          Discover the fascinating world of music theory {{ locationId ? `from ${locationId}` : '' }}!
         </h2>
 
         <p>Have you always dreamed of understanding music at a deeper level? Would you like to read sheet music, compose
@@ -58,7 +62,9 @@ const leave = (el, done) => {
           next level. My goal is to make music theory accessible and exciting for everyone, regardless of your level of
           experience.</p>
 
-        <h3>In-person - 25€/h</h3>
+        <p v-if="locationId">Start your lessons from {{ locationId }}</p>
+
+        <h3 v-if="!locationId">In-person - 25€/h</h3>
         <h3>Online - 20€/h</h3>
         <div class="musical-classes-info-button">
 

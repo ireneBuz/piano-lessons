@@ -1,17 +1,8 @@
-<script>
+<script setup>
 import BlogCards from './../components/BlogCards.vue';
-import { slides } from './../utils/slides.js'
-export default {
-    components: {
-        BlogCards,
-    },
-    data() {
-        return {
-            slides: slides
-        };
-    },
-};
+import { slides } from './../utils/slides.js';
 </script>
+
 
 <template>
     <header>
@@ -22,7 +13,6 @@ export default {
             <div class="sub-title">
                 <p>"Music is a higher revelation than any philosophy." - Beethoven</p>
             </div>
-
             <div class="cards">
                 <div v-for="(slide, index) in slides" :key="index">
                     <BlogCards :image-src="slide.imageSrc" :title="slide.title" :excerpt="slide.excerpt"
@@ -33,6 +23,9 @@ export default {
         </div>
     </header>
 </template>
+
+
+
 
 
 
