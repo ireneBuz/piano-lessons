@@ -376,7 +376,7 @@ section {
 .nav-links {
     display: flex;
     justify-content: space-evenly;
-    width: 40%;
+    width: 50%;
 
 }
 
@@ -416,7 +416,7 @@ nav p {
 nav .contacto {
     text-align: end;
     margin-right: 5%;
-    width: 20%;
+    width: 10%;
 }
 
 nav .contacto a {
@@ -459,7 +459,7 @@ nav .contacto a:hover {
     height: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    transform: translate(70px, 40px);
+    transform: translate(10px, 40px);
     background-color: rgb(142, 142, 142);
 }
 
