@@ -9,6 +9,11 @@ export default defineNuxtConfig(() => {
       '~/assets/css/fonts.css',
       '~/assets/css/blog.css'
     ],
+    routeRules: {
+      '/musical-theory-lessons/madrid': { ssr: false },
+      '/piano-lessons/madrid': { ssr: false }
+    },
+
     app: {
       pageTransition: { name: 'page', mode: 'out-in' },
       head: {
