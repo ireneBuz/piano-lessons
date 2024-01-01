@@ -1,5 +1,9 @@
 <script setup>
-const { isDarkMode } = defineProps(['isDarkMode']);
+import { cognitiveBenefitsMetaData } from './../utils/metaData.js'
+
+const { isDarkMode } = defineProps(['isDarkMode'])
+
+useHead(cognitiveBenefitsMetaData)
 </script>
 
 <template>

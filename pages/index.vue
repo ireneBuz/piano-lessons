@@ -1,4 +1,6 @@
-<script setup lang="ts">
+<script setup>
+import { indexMetaData } from './../utils/metaData.js'
+useHead(indexMetaData)
 </script>
 
 <template>

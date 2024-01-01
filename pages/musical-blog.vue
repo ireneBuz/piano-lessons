@@ -1,7 +1,9 @@
 <script setup>
 import { slides } from './../utils/slides.js';
-
+import { musicalBlogMetaData } from './../utils/metaData.js'
 const { isDarkMode } = defineProps(['isDarkMode']);
+
+useHead(musicalBlogMetaData)
 </script>
 
 

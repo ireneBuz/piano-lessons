@@ -1,4 +1,7 @@
 <script setup>
+import { coursesMetaData } from './../utils/metaData.js'
+useHead(coursesMetaData)
+
 </script>
 
 <template>
