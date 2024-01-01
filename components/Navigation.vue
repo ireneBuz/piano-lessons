@@ -147,14 +147,7 @@ const { toggleDarkMode, isDarkMode } = defineProps(['toggleDarkMode', 'isDarkMod
 
             <transition @enter="enterForm" @leave="leaveForm">
                 <div v-if="showModal">
-                    <div class="modal">
-                        <div class="modal-content">
-                            <span class="close" @click="closeModal" role="button" aria-label="Close Modal">
-                                <img src="/images/closeModal.svg" alt="Close Modal">
-                            </span>
-                            <ContactForm />
-                        </div>
-                    </div>
+                    <ContactForm :closeModal="closeModal" />
                 </div>
             </transition>
         </nav>
@@ -225,9 +218,6 @@ const { toggleDarkMode, isDarkMode } = defineProps(['toggleDarkMode', 'isDarkMod
     background-color: #374151;
 }
 
-
-
-
 .toggle-button {
     transform: translate(23px, 2px);
     position: absolute;
@@ -289,43 +279,8 @@ const { toggleDarkMode, isDarkMode } = defineProps(['toggleDarkMode', 'isDarkMod
 
 section {
     margin: auto;
-    max-width: 1440px;
+    max-width: 1470px;
 }
-
-.modal {
-    display: block;
-    position: fixed;
-    z-index: 20;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-}
-
-.modal-content {
-    background-color: #eeeeee;
-    margin: 3% auto;
-    padding: 20px;
-    width: 47.25rem;
-    height: 43.0625rem;
-    border-radius: 40px;
-}
-
-.dark-mode .modal-content {
-    background-color: #434343;
-    color: #e6e6e6;
-}
-
-
-.close {
-    display: flex;
-    justify-content: flex-end;
-    cursor: pointer;
-    transform: translateY(15px) translateX(-15px);
-}
-
 
 .active-link {
     background: var(--main-colors-gradient, linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%));
@@ -478,11 +433,6 @@ nav .contacto a:hover {
 
 }
 
-@media (max-width:900px) {
-    .modal-content {
-        width: 37.25rem;
-    }
-}
 
 @media (max-width: 950px) {
     .dark-mode .toggle-slot .moon-icon-wrapper {
@@ -554,20 +504,10 @@ nav .contacto a:hover {
     }
 }
 
-@media (max-width:645px) {
-    .modal-content {
-        width: 25.25rem;
-    }
-}
-
 @media (max-width: 440px) {
 
     .title p {
         font-size: 28px;
-    }
-
-    .modal-content {
-        width: 21.5rem;
     }
 
     .menu-icon {

@@ -42,20 +42,20 @@ export default defineNuxtConfig(() => {
             href: 'https://pianolessonsmadrid.com/'
           }
         ],
-        // script: [
-        //   { src: 'https://code.iconify.design/1/1.0.4/iconify.min.js', defer: true },
-        //   isProduction && {
-        //     innerHTML: `
-        //       window.dataLayer = window.dataLayer || [];
-        //       function gtag(){ dataLayer.push(arguments); }
-        //       gtag('js', new Date());
-        //       gtag('config', 'G-XRT72ZGBB4');
-        //     `,
-        //     type: 'text/javascript',
-        //     defer: true
-        //   },
-        //   isProduction && { src: 'https://www.googletagmanager.com/gtag/js?id=G-XRT72ZGBB4', defer: true }
-        // ].filter(Boolean),
+        script: [
+          { src: 'https://code.iconify.design/1/1.0.4/iconify.min.js', defer: true },
+          //   isProduction && {
+          //     innerHTML: `
+          //       window.dataLayer = window.dataLayer || [];
+          //       function gtag(){ dataLayer.push(arguments); }
+          //       gtag('js', new Date());
+          //       gtag('config', 'G-XRT72ZGBB4');
+          //     `,
+          //     type: 'text/javascript',
+          //     defer: true
+          //   },
+          //   isProduction && { src: 'https://www.googletagmanager.com/gtag/js?id=G-XRT72ZGBB4', defer: true }
+        ].filter(Boolean),
         title: 'Piano lessons - Irene Buceta',
         htmlAttrs: {
           lang: 'en'
