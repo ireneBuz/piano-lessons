@@ -161,6 +161,9 @@ export default defineNuxtConfig(() => {
         '/piano-lessons/menorca'
       ]
     },
+    modules: [
+      '@nuxt/image',
+    ],
     app: {
       pageTransition: { name: 'page', mode: 'out-in' },
       head: {
