@@ -9,5 +9,3 @@
         <BlogHomePage />
     </section>
 </template>
-
-<style scoped></style>

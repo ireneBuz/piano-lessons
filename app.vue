@@ -29,8 +29,18 @@ const toggleDarkMode = () => {
   <div :class="{ 'dark-mode': isDarkMode }" class="transition-container">
     <header>
       <Navigation :isDarkMode="isDarkMode" :toggleDarkMode="toggleDarkMode" />
-      <NuxtPage />
+      <div id="container">
+        <NuxtPage />
+      </div>
       <Footer :isDarkMode="isDarkMode" />
     </header>
   </div>
 </template>
+
+<style scoped>
+#container {
+  margin: auto;
+  max-width: 1470px;
+  min-height: 96vh;
+}
+</style>

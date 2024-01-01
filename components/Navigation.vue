@@ -179,11 +179,6 @@ const leaveForm = (el, done) => {
     </section>
 </template>
 
-
-
-
-
-
 <style scoped>
 .mode-light {
     margin-left: 20px;

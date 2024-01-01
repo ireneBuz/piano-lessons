@@ -37,12 +37,6 @@ useHead(lessonsScheduleMetaData)
 
 
 <style scoped>
-section {
-  margin: auto;
-  max-width: 1440px;
-  min-height: 96vh;
-}
-
 .schedule-relative {
   display: flex;
   flex-direction: column;

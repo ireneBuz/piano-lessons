@@ -106,10 +106,6 @@ onMounted(() => {
 </template>
 
 
-
-
-
-
 <style scoped>
 .dark-mode {
     background-color: #151515;

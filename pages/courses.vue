@@ -14,13 +14,6 @@ useHead(coursesMetaData)
 
 
 <style scoped>
-section {
-  margin: auto;
-  max-width: 1440px;
-  min-height: 96vh;
-}
-
-
 .courses {
   display: flex;
   justify-content: center;
