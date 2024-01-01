@@ -1,10 +1,9 @@
 <script setup>
-import heroImg from '~/assets/images/heroimg.webp'
+// import heroImg from '~/'
 import closeModalIcon from '~/assets/images/closeModal.svg'
 import ContactForm from './ContactForm.vue'
 import { ref } from 'vue';
 import { gsap } from 'gsap'
-
 let showModal = ref(false);
 
 const openModal = () => {
@@ -58,7 +57,7 @@ const leave = (el, done) => {
                 </div>
             </transition>
             <div class="hero-img">
-                <img :src="heroImg" alt="" />
+                <NuxtImg src="/heroimg.webp" alt="Singer logo" />
             </div>
         </div>
 
