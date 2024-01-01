@@ -1,12 +1,10 @@
 <script setup>
 import axios from 'axios';
-import { ref } from 'vue';
 
 const props = defineProps({
     isDarkMode: Boolean,
     closeModal: Function
 });
-
 
 let submittedForm = ref(false);
 

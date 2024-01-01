@@ -1,5 +1,9 @@
 <script setup>
-const { isDarkMode } = defineProps(['isDarkMode']);
+import { improveYourPianoTechniqueMetaData } from './../utils/metaData.js'
+
+const { isDarkMode } = defineProps(['isDarkMode'])
+
+useHead(improveYourPianoTechniqueMetaData)
 </script>
 
 <template>

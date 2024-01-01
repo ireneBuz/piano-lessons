@@ -1,17 +1,7 @@
 <script setup>
 import ContactForm from './ContactForm.vue'
-import { ref } from 'vue';
 import { gsap } from 'gsap'
-let showModal = ref(false);
-
-const openModal = () => {
-    showModal.value = true;
-}
-
-const closeModal = () => {
-    showModal.value = false;
-}
-
+import { openModal, closeModal, showModal } from '~/utils/modal'
 
 const enter = (el) => {
     gsap.fromTo(el, {

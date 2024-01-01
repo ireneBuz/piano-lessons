@@ -1,5 +1,9 @@
 <script setup>
-const { isDarkMode } = defineProps(['isDarkMode']);
+import { lessonsScheduleMetaData } from './../utils/metaData.js'
+
+const { isDarkMode } = defineProps(['isDarkMode'])
+
+useHead(lessonsScheduleMetaData)
 </script>
 
 <template>

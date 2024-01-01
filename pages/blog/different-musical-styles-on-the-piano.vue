@@ -1,5 +1,9 @@
 <script setup>
-const { isDarkMode } = defineProps(['isDarkMode']);
+import { differentMusicalStylesMetaData } from './../utils/metaData.js'
+
+const { isDarkMode } = defineProps(['isDarkMode'])
+
+useHead(differentMusicalStylesMetaData)
 </script>
 
 <template>

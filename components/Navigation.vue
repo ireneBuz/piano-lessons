@@ -1,13 +1,14 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { computed } from 'vue';
 import { RouterLink } from 'vue-router';
 import menuIcon from '/images/menuicon.svg'
 import menuIconClose from '/images/menuiconclose.svg'
 import { gsap } from 'gsap'
+import { openModal, closeModal, showModal } from '~/utils/modal'
+
+const { toggleDarkMode, isDarkMode } = defineProps(['toggleDarkMode', 'isDarkMode']);
 
 const isMenuOpen = ref(false);
-let showModal = ref(false);
-
 
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value;
@@ -18,14 +19,6 @@ const menuIconSource = computed(() => {
 });
 const closeMenu = () => {
     isMenuOpen.value = false;
-}
-
-const openModal = () => {
-    showModal.value = true;
-}
-
-const closeModal = () => {
-    showModal.value = false;
 }
 
 const handleButtonClick = () => {
@@ -74,7 +67,6 @@ const leaveForm = (el, done) => {
     });
 };
 
-const { toggleDarkMode, isDarkMode } = defineProps(['toggleDarkMode', 'isDarkMode']);
 </script>
 
 
