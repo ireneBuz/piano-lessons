@@ -1,9 +1,9 @@
 <script setup>
-import pianoImg from '~/assets/images/pianoImg.webp'
-import closeModalIcon from '~/assets/images/closeModal.svg'
 import { ref } from 'vue';
 import { gsap } from 'gsap'
 import { useRoute } from 'vue-router';
+
+const { isDarkMode } = defineProps(['isDarkMode']);
 
 const route = useRoute();
 const locationId = route.params.location?.charAt(0).toUpperCase() + route.params.location?.slice(1)
@@ -43,7 +43,7 @@ const leave = (el, done) => {
         <div class='modal'>
           <div class='modal-content'>
             <span class='close' @click="closeModal">
-              <img :src="closeModalIcon" alt="">
+              <img src="/images/closeModal.svg" alt="">
             </span>
             <ContactForm />
           </div>
@@ -80,7 +80,7 @@ const leave = (el, done) => {
 
 
       <div class="piano-classes-img">
-        <img :src="pianoImg" alt="">
+        <img src="/images/pianoImg.webp" alt="">
       </div>
     </div>
   </section>

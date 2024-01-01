@@ -1,12 +1,10 @@
 <script setup>
-import homeInfo1 from '~/assets/images/homeInfo1.svg'
-import homeInfo2 from '~/assets/images/homeInfo2.svg'
-import homeInfo3 from '~/assets/images/homeInfo3.svg'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { onMounted } from 'vue';
 gsap.registerPlugin(ScrollTrigger);
 
+const { isDarkMode } = defineProps(['isDarkMode']);
 
 onMounted(() => {
     gsap.from(".item1", {
@@ -50,8 +48,6 @@ onMounted(() => {
         opacity: 1,
     })
 })
-
-
 </script>
 
 
@@ -65,7 +61,7 @@ onMounted(() => {
             <div class="home-info-points">
                 <div class="home-info-points-item item1">
                     <div class="home-info-points-item-img">
-                        <img :src="homeInfo1" alt="">
+                        <img src="/images/homeInfo1.svg" alt="">
                     </div>
                     <div class="home-info-points-item-h3">
                         <h3>1. Choose the mode you prefer</h3>
@@ -76,7 +72,7 @@ onMounted(() => {
                 </div>
                 <div class="home-info-points-item item2">
                     <div class="home-info-points-item-img">
-                        <img :src="homeInfo2" alt="">
+                        <img src="/images/homeInfo2.svg" alt="">
                     </div>
                     <div class="home-info-points-item-h3">
                         <h3>2. Contact and set the days and hours </h3>
@@ -89,7 +85,7 @@ onMounted(() => {
                 </div>
                 <div class="home-info-points-item item3">
                     <div class="home-info-points-item-img">
-                        <img :src="homeInfo3" alt="">
+                        <img src="/images/homeInfo3.svg" alt="">
                     </div>
                     <div class="home-info-points-item-h3">
                         <h3>3. Learn and enjoy!</h3>

@@ -1,12 +1,9 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { RouterLink } from 'vue-router';
-import menuIcon from '~/assets/images/menuicon.svg'
-import menuIconClose from '~/assets/images/menuiconclose.svg'
-import ContactForm from './ContactForm.vue'
-import closeModalIcon from '~/assets/images/closeModal.svg'
+import menuIcon from '/images/menuicon.svg'
+import menuIconClose from '/images/menuiconclose.svg'
 import { gsap } from 'gsap'
-
 
 const isMenuOpen = ref(false);
 let showModal = ref(false);
@@ -77,10 +74,7 @@ const leaveForm = (el, done) => {
     });
 };
 
-const { toggleDarkMode } = defineProps(['toggleDarkMode']);
-
-
-
+const { toggleDarkMode, isDarkMode } = defineProps(['toggleDarkMode', 'isDarkMode']);
 </script>
 
 
@@ -156,7 +150,7 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
                     <div class="modal">
                         <div class="modal-content">
                             <span class="close" @click="closeModal" role="button" aria-label="Close Modal">
-                                <img :src="closeModalIcon" alt="Close Modal">
+                                <img src="/images/closeModal.svg" alt="Close Modal">
                             </span>
                             <ContactForm />
                         </div>

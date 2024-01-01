@@ -1,6 +1,4 @@
 <script setup>
-// import heroImg from '~/'
-import closeModalIcon from '~/assets/images/closeModal.svg'
 import ContactForm from './ContactForm.vue'
 import { ref } from 'vue';
 import { gsap } from 'gsap'
@@ -28,7 +26,6 @@ const leave = (el, done) => {
         onComplete: done,
     });
 }
-
 </script>
 
 
@@ -49,7 +46,7 @@ const leave = (el, done) => {
                     <div class='modal'>
                         <div class='modal-content'>
                             <span class='close' @click="closeModal">
-                                <img :src="closeModalIcon" alt="" />
+                                <img src="/images/closeModal.svg" alt="" />
                             </span>
                             <ContactForm />
                         </div>
@@ -57,7 +54,7 @@ const leave = (el, done) => {
                 </div>
             </transition>
             <div class="hero-img">
-                <NuxtImg src="/heroimg.webp" alt="Singer logo" />
+                <img src="/images/heroimg.webp" alt="Singer logo" />
             </div>
         </div>
 

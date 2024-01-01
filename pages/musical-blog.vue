@@ -1,6 +1,7 @@
 <script setup>
-import BlogCards from './../components/BlogCards.vue';
 import { slides } from './../utils/slides.js';
+
+const { isDarkMode } = defineProps(['isDarkMode']);
 </script>
 
 
@@ -23,11 +24,6 @@ import { slides } from './../utils/slides.js';
         </div>
     </header>
 </template>
-
-
-
-
-
 
 <style scoped>
 .home-blog {

@@ -1,33 +1,18 @@
-<script>
+<script setup>
+import { ref } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay } from 'swiper/modules';
 import BlogCards from './BlogCards.vue';
-import { slides } from './../utils/slides.js'
+import { slides } from './../utils/slides.js';
 import { RouterLink } from 'vue-router';
 
-export default {
-    components: {
-        Swiper,
-        SwiperSlide,
-        BlogCards,
-    },
-    data() {
-        return {
-            slides: slides
-        };
-    },
-    setup() {
-        return {
-            modules: [Pagination, Autoplay],
-        };
-    },
-};
+const { isDarkMode } = defineProps(['isDarkMode']);
 
-
-
+const modules = [Pagination, Autoplay];
+const slidesData = ref(slides);
 </script>
 
 <template>
@@ -59,7 +44,7 @@ export default {
     },
 
 }" :modules="modules" class="mySwiper">
-                    <SwiperSlide v-for="(slide, index) in slides" :key="index">
+                    <SwiperSlide v-for="(slide, index) in slidesData" :key="index">
                         <BlogCards :image-src="slide.imageSrc" :title="slide.title" :excerpt="slide.excerpt"
                             :read-more-link="slide.readMoreLink" :date="slide.date">
                         </BlogCards>
