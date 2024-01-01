@@ -17,8 +17,8 @@ useHead(lessonsScheduleMetaData)
           are tailored to accommodate your needs.
         </h2>
         <p>From <span>Monday to Friday,</span> you can choose between the mornings, from <strong>9AM to
-            12PM,</strong>
-          to start your study day with energy, or the afternoons, from <strong>5PM to 9PM,</strong> to review and
+            2PM,</strong>
+          to start your study day with energy, or the afternoons, from <strong>3PM to 9PM,</strong> to review and
           consolidate what you have learned after your daily commitments. Your success is my priority, and my schedule is
           flexible to facilitate your path to knowledge and growth.</p>
       </div>
