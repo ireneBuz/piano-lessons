@@ -10,8 +10,8 @@ export default defineNuxtConfig(() => {
       '~/assets/css/blog.css'
     ],
     routeRules: {
-      '/musical-theory-lessons/madrid': { ssr: false },
-      '/piano-lessons/madrid': { ssr: false }
+      '/musical-theory-lessons': { ssr: false },
+      '/piano-lessons': { ssr: false }
     },
 
     app: {
@@ -56,7 +56,7 @@ export default defineNuxtConfig(() => {
           },
           isProduction && { src: 'https://www.googletagmanager.com/gtag/js?id=G-XRT72ZGBB4', defer: true }
         ].filter(Boolean),
-        title: 'Music lessons - Irene Buceta',
+        title: 'Piano lessons - Irene Buceta',
         htmlAttrs: {
           lang: 'en'
         },
