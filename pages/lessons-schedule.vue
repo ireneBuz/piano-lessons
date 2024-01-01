@@ -22,10 +22,10 @@ const { isDarkMode } = defineProps(['isDarkMode']);
 
       <div class="schedule-info-background">
         <div class="schedule-info-background-img1">
-          <img src="images/scheduleBackground1.svg" alt="">
+          <img src="/images/scheduleBackground1.svg" alt="">
         </div>
         <div class="schedule-info-background-img2">
-          <img src="images/scheduleBackground2.svg" alt="">
+          <img src="/images/scheduleBackground2.svg" alt="">
         </div>
 
       </div>
