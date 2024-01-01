@@ -9,9 +9,10 @@ export default defineNuxtConfig(() => {
       '~/assets/css/fonts.css',
       '~/assets/css/blog.css'
     ],
-    routeRules: {
-      '/musical-theory-lessons': { ssr: false },
-      '/piano-lessons': { ssr: false }
+    generate: {
+      routes: [
+        '/musical-theory-lessons/barcelona'
+      ]
     },
 
     app: {
