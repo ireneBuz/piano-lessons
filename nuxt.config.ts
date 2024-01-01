@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { routes } from './utils/routes'
 
-
 export default defineNuxtConfig(() => {
   const isProduction = process.env.NODE_ENV === 'production';
 
@@ -57,7 +56,7 @@ export default defineNuxtConfig(() => {
           //   },
           //   isProduction && { src: 'https://www.googletagmanager.com/gtag/js?id=G-XRT72ZGBB4', defer: true }
         ].filter(Boolean),
-        title: 'Piano Lessons - Musical Theory - Irene Buceta School',
+        title: 'Piano Lessons - Musical Theory Classes - Irene Buceta School',
         htmlAttrs: {
           lang: 'en'
         },

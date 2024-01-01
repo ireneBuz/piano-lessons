@@ -51,7 +51,7 @@ const leave = (el, done) => {
           next level. My goal is to make music theory accessible and exciting for everyone, regardless of your level of
           experience.</p>
 
-        <p v-if="locationId !== 'Madrid'">Start your lessons from {{ locationId }}</p>
+        <p v-if="locationId !== 'Madrid'">Start your lessons from {{ locationId }}.</p>
 
         <h3 v-if="locationId === 'Madrid'">In-person - 25€/h</h3>
         <h3>Online - 20€/h</h3>
@@ -73,12 +73,6 @@ const leave = (el, done) => {
 
 
 <style scoped>
-section {
-  margin: auto;
-  max-width: 1470px;
-  min-height: 96vh;
-}
-
 .musical-classes {
   display: flex;
   margin-top: 100px;

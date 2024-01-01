@@ -52,7 +52,7 @@ const leave = (el, done) => {
           progress in their lessons, they explore classical, contemporary, and original compositions, challenging their
           dexterity and creativity at the piano.</p>
 
-        <p v-if="locationId !== 'Madrid'">Start your lessons from {{ locationId }}</p>
+        <p v-if="locationId !== 'Madrid'">Start your lessons from {{ locationId }}.</p>
 
         <h3 v-if="locationId === 'Madrid'">In-person - 25€/h</h3>
         <h3>Online - 20€/h</h3>
@@ -65,9 +65,6 @@ const leave = (el, done) => {
 
         </div>
       </div>
-
-
-
       <div class="piano-classes-img">
         <img src="/images/pianoImg.webp" alt="">
       </div>
@@ -77,13 +74,6 @@ const leave = (el, done) => {
 
 
 <style scoped>
-section {
-  margin: auto;
-  max-width: 1470px;
-  min-height: 96vh;
-
-}
-
 .piano-classes {
   display: flex;
   margin-top: 100px;

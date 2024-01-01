@@ -46,8 +46,6 @@ useHead(musicalBlogMetaData)
     margin-right: 10px;
 }
 
-
-
 .title h2 {
     color: rgb(23, 23, 23);
     font-family: 'Newake';

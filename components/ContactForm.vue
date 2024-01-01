@@ -31,7 +31,6 @@ const submitForm = async () => {
     }
 };
 
-
 </script>
 
 <template>

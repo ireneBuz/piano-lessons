@@ -18,7 +18,6 @@ const leave = (el, done) => {
 }
 </script>
 
-
 <template>
     <header>
         <div class="hero">
@@ -42,10 +41,6 @@ const leave = (el, done) => {
         </div>
     </header>
 </template>
-
-
-
-
 
 
 <style scoped>

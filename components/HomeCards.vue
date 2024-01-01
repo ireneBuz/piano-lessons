@@ -69,11 +69,6 @@ onMounted(() => {
     </header>
 </template>
 
-
-
-
-
-
 <style scoped>
 .home-cards {
     display: flex;
