@@ -90,7 +90,7 @@ onMounted(() => {
     padding-right: 20px;
     padding-left: 20px;
     gap: 31px;
-    border-radius: 24px;
+    border-radius: 15px;
     background: #FFF;
     box-shadow: 0px 13px 28px 0px rgba(0, 0, 0, 0.10), 0px 50px 50px 0px rgba(0, 0, 0, 0.09), 0px 113px 68px 0px rgba(0, 0, 0, 0.05), 0px 201px 80px 0px rgba(0, 0, 0, 0.01), 0px 314px 88px 0px rgba(0, 0, 0, 0.00);
 }
@@ -102,6 +102,7 @@ onMounted(() => {
 
 .home-cards .home-cards-single img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .home-cards .home-cards-single h4 {
