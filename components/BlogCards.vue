@@ -1,16 +1,13 @@
-<script>
+<script setup>
 import { RouterLink } from 'vue-router';
-export default {
 
-    name: 'BlogCards',
-    props: {
-        imageSrc: String,
-        title: String,
-        excerpt: String,
-        readMoreLink: String,
-        date: String
-    }
-}
+const { imageSrc, title, excerpt, readMoreLink, date } = defineProps({
+    imageSrc: String,
+    title: String,
+    excerpt: String,
+    readMoreLink: String,
+    date: String
+})
 </script>
 
 <template>

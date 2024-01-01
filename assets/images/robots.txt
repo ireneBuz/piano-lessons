@@ -1,6 +1,0 @@
-# start of file
-
-User-agent: *
-Allow: /
-
-Sitemap: https://pianolessonsmadrid.com/sitemap.xml

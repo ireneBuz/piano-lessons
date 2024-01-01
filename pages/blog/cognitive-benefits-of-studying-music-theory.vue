@@ -1,5 +1,5 @@
-<script>
-import '/assets/css/blog.css'
+<script setup>
+const { isDarkMode } = defineProps(['isDarkMode']);
 </script>
 
 <template>

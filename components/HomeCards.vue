@@ -1,15 +1,11 @@
 <script setup>
-import homeCards1 from '~/assets/images/homeCards1.webp'
-import homeCardsButton from '~/assets/images/homeCardsButton.svg'
-import homeCards2 from '~/assets/images/homeCards2.webp'
 import { gsap } from "gsap";
-
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { onMounted } from 'vue';
 
+const { isDarkMode } = defineProps(['isDarkMode']);
 
 gsap.registerPlugin(ScrollTrigger);
-
 
 onMounted(() => {
     gsap.from(".card1", {
@@ -36,8 +32,6 @@ onMounted(() => {
         y: 0,
     });
 })
-
-
 </script>
 
 
@@ -46,18 +40,18 @@ onMounted(() => {
 
         <div class="home-cards" :class="{ 'dark-mode': isDarkMode }">
             <div class="home-cards-single card1">
-                <img :src="homeCards1" alt="">
+                <img src="/images/homeCards1.webp" alt="">
                 <div class="home-cards-single-h4">
                     <h4>Do you want to learn music theory?</h4>
                 </div>
                 <p> Theory provides the necessary framework to understand music.</p>
                 <div class="info">
                     <RouterLink to="/musical-theory-lessons">
-                        See options <img :src="homeCardsButton" alt=""></RouterLink>
+                        See options <img src="/images/homeCardsButton.svg" alt=""></RouterLink>
                 </div>
             </div>
             <div class="home-cards-single card2">
-                <img :src="homeCards2" alt="">
+                <img src="/images/homeCards2.webp" alt="">
                 <div class="home-cards-single-h4">
                     <h4>Do you want to learn to play the piano?</h4>
                 </div>
@@ -66,7 +60,7 @@ onMounted(() => {
 
                 <div class="info">
                     <RouterLink to="/piano-lessons">
-                        See options <img :src="homeCardsButton" alt=""></RouterLink>
+                        See options <img src="/images/homeCardsButton.svg" alt=""></RouterLink>
 
                 </div>
             </div>

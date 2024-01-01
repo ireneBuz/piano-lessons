@@ -1,9 +1,6 @@
 <script setup>
-import linkedInIcon from '~/assets/images/linkedInIcon.svg'
-
-
+const { isDarkMode } = defineProps(['isDarkMode']);
 </script>
-
 
 <template>
     <header>
@@ -11,21 +8,19 @@ import linkedInIcon from '~/assets/images/linkedInIcon.svg'
             <div class="footer-div">
                 <div>
                     <p>
-                        © 2023 Irene Buceta All Rights Reserved
+                        © 2024 Irene Buceta All Rights Reserved
                     </p>
                 </div>
                 <div>
                     <a href="https://www.linkedin.com/in/irene-buceta-aloc%C3%A9n/" target="_blank"
                         rel="noopener noreferrer" role="link" aria-label="LinkedIn Profile Link">
-                        <img :src="linkedInIcon" alt="LinkedIn Icon">
+                        <img src="/images/linkedInIcon.svg" alt="LinkedIn Icon">
                     </a>
                 </div>
             </div>
         </div>
     </header>
 </template>
-
-
 
 <style scoped>
 .footer {

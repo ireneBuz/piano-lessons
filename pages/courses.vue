@@ -1,12 +1,10 @@
 <script setup>
-import comingSoonImg from '~/assets/images/comingSoonImg.webp'
-
 </script>
 
 <template>
   <section>
     <div class="courses">
-      <img :src="comingSoonImg" alt="">
+      <img src="/images/comingSoonImg.webp" alt="">
     </div>
   </section>
 </template>

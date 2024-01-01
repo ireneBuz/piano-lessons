@@ -9,7 +9,6 @@
 <style scoped>
 main {
   margin: auto;
-
   max-width: 1470px;
   min-height: 96vh;
 }

@@ -2,8 +2,9 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-let submittedForm = ref(false);
+const { isDarkMode } = defineProps(['isDarkMode']);
 
+let submittedForm = ref(false);
 
 const formData = {
     name: '',
@@ -11,7 +12,6 @@ const formData = {
     phone: '',
     message: '',
 };
-
 
 const submitForm = async () => {
     try {
@@ -28,8 +28,8 @@ const submitForm = async () => {
         console.error('Error submitting the form:', error);
     }
 };
-
 </script>
+
 <template>
     <div :class="{ 'dark-mode': isDarkMode }">
         <div class="contact-title">

@@ -1,7 +1,5 @@
 <script setup>
-import scheduleBackground1 from '~/assets/images/scheduleBackground1.svg'
-import scheduleBackground2 from '~/assets/images/scheduleBackground2.svg'
-
+const { isDarkMode } = defineProps(['isDarkMode']);
 </script>
 
 <template>
@@ -24,10 +22,10 @@ import scheduleBackground2 from '~/assets/images/scheduleBackground2.svg'
 
       <div class="schedule-info-background">
         <div class="schedule-info-background-img1">
-          <img :src="scheduleBackground1" alt="">
+          <img src="images/scheduleBackground1.svg" alt="">
         </div>
         <div class="schedule-info-background-img2">
-          <img :src="scheduleBackground2" alt="">
+          <img src="images/scheduleBackground2.svg" alt="">
         </div>
 
       </div>
