@@ -40,14 +40,7 @@ const leave = (el, done) => {
 
     <transition @enter="enter" @leave="leave">
       <div v-if="showModal" @close="closeModal">
-        <div class='modal'>
-          <div class='modal-content'>
-            <span class='close' @click="closeModal">
-              <img src="/images/closeModal.svg" alt="">
-            </span>
-            <ContactForm />
-          </div>
-        </div>
+        <ContactForm :closeModal="closeModal" />
       </div>
     </transition>
     <div class="piano-classes">
@@ -88,47 +81,9 @@ const leave = (el, done) => {
 
 
 <style scoped>
-.modal {
-  display: block;
-  position: fixed;
-  z-index: 20;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(5px);
-
-}
-
-.modal-content {
-  background-color: #eeeeee;
-  margin: 3% auto;
-  padding: 20px;
-  width: 47.25rem;
-  height: 43.0625rem;
-  border-radius: 40px;
-}
-
-.dark-mode .modal-content {
-  background-color: #434343;
-  color: #e6e6e6;
-}
-
-.close {
-  display: flex;
-  justify-content: flex-end;
-  cursor: pointer;
-  transform: translateY(15px) translateX(-15px);
-}
-
-
-
-
-
 section {
   margin: auto;
-  max-width: 1440px;
+  max-width: 1470px;
   min-height: 96vh;
 
 }
@@ -214,11 +169,6 @@ section {
   color: #e6e6e6;
 }
 
-@media (max-width:900px) {
-  .modal-content {
-    width: 37.25rem;
-  }
-}
 
 @media (max-width: 870px) {
   .piano-classes {
@@ -248,18 +198,8 @@ section {
   }
 }
 
-@media (max-width:645px) {
-  .modal-content {
-    width: 25.25rem;
-  }
-}
 
 @media (max-width: 440px) {
-
-  .modal-content {
-    width: 21.5rem;
-  }
-
   .piano-classes {
     margin-top: 20px;
     margin-left: 8%;

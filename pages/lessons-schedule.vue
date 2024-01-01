@@ -18,8 +18,6 @@ const { isDarkMode } = defineProps(['isDarkMode']);
           consolidate what you have learned after your daily commitments. Your success is my priority, and my schedule is
           flexible to facilitate your path to knowledge and growth.</p>
       </div>
-
-
       <div class="schedule-info-background">
         <div class="schedule-info-background-img1">
           <img src="/images/scheduleBackground1.svg" alt="">

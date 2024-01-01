@@ -43,22 +43,13 @@ const leave = (el, done) => {
             </div>
             <transition @enter="enter" @leave="leave">
                 <div v-if="showModal" @close="closeModal">
-                    <div class='modal'>
-                        <div class='modal-content'>
-                            <span class='close' @click="closeModal">
-                                <img src="/images/closeModal.svg" alt="" />
-                            </span>
-                            <ContactForm />
-                        </div>
-                    </div>
+                    <ContactForm :closeModal="closeModal" />
                 </div>
             </transition>
             <div class="hero-img">
                 <img src="/images/heroimg.webp" alt="Singer logo" />
             </div>
         </div>
-
-
     </header>
 </template>
 
@@ -68,40 +59,6 @@ const leave = (el, done) => {
 
 
 <style scoped>
-.modal {
-    display: block;
-    position: fixed;
-    z-index: 20;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-
-}
-
-.modal-content {
-    background-color: #eeeeee;
-    margin: 3% auto;
-    padding: 20px;
-    width: 47.25rem;
-    height: 43.0625rem;
-    border-radius: 40px;
-}
-
-.dark-mode .modal-content {
-    background-color: #434343;
-    color: #e6e6e6;
-}
-
-.close {
-    display: flex;
-    justify-content: flex-end;
-    cursor: pointer;
-    transform: translateY(15px) translateX(-15px);
-}
-
 .hero {
     display: flex;
     align-items: center;
@@ -117,7 +74,6 @@ const leave = (el, done) => {
 .hero .hero-img img {
     margin-left: 40px;
     width: 90%;
-
 }
 
 .hero .hero-text h1 {
@@ -144,7 +100,6 @@ const leave = (el, done) => {
     padding: 13px 19px 8px 19px;
     border-radius: 30px;
     font-family: 'Founders-Grotesk-medium';
-
     background: var(--main-colors-gradient, linear-gradient(30deg, #3D73EB 13.4%, #DE8FFF 86.6%));
     font-size: 20px;
     cursor: pointer;
@@ -155,8 +110,6 @@ const leave = (el, done) => {
     background: var(--main-colors-gradient, linear-gradient(30deg, #1f53c3 13.4%, #cd59ff 75.6%));
 }
 
-
-
 .hero .hero-text .info {
     margin-top: 55px;
     margin-bottom: 50px;
@@ -164,19 +117,10 @@ const leave = (el, done) => {
 
 }
 
-
-
 .hero .hero-text,
 .hero .hero-img {
     width: 43%;
 }
-
-@media (max-width:900px) {
-    .modal-content {
-        width: 37.25rem;
-    }
-}
-
 
 @media (max-width: 870px) {
     .hero {
@@ -186,7 +130,6 @@ const leave = (el, done) => {
     }
 
     .hero .hero-text h1 {
-
         margin-top: 0;
     }
 
@@ -210,12 +153,10 @@ const leave = (el, done) => {
         margin-left: 0;
     }
 
-
     .hero .hero-img {
         width: 60%;
 
     }
-
 
     .hero .hero-text p {
         font-size: 24px;
@@ -223,16 +164,7 @@ const leave = (el, done) => {
     }
 }
 
-@media (max-width:645px) {
-    .modal-content {
-        width: 25.25rem;
-    }
-}
-
 @media (max-width: 440px) {
-    .modal-content {
-        width: 21.5rem;
-    }
 
     .hero .hero-text h1 {
         font-size: 34px;
@@ -244,7 +176,6 @@ const leave = (el, done) => {
     .hero .hero-img {
         width: 85%;
     }
-
 
     .hero .hero-text .info {
 

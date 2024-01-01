@@ -2,7 +2,11 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-const { isDarkMode } = defineProps(['isDarkMode']);
+const props = defineProps({
+    isDarkMode: Boolean,
+    closeModal: Function
+});
+
 
 let submittedForm = ref(false);
 
@@ -28,60 +32,104 @@ const submitForm = async () => {
         console.error('Error submitting the form:', error);
     }
 };
+
+
 </script>
 
 <template>
-    <div :class="{ 'dark-mode': isDarkMode }">
-        <div class="contact-title">
-            <h3 data-text="Contacto">Contact</h3>
+    <div class='modal'>
+        <div class='modal-content'>
+            <span class='close' @click="closeModal" role="button" aria-label="Close Modal">
+                <img src="/images/closeModal.svg" alt="" />
+            </span>
+            <div :class="{ 'dark-mode': isDarkMode }">
+                <div class="contact-title">
+                    <h3 data-text="Contacto">Contact</h3>
 
-            <p v-if="!submittedForm"><a class="tlf" href="tel:654140710">+34 654 14 07 10</a> or <a class="whatsapp"
-                    href="https://api.whatsapp.com/send?phone=+34654140710">WhatsApp</a></p>
-            <p v-if="!submittedForm">If you prefer you can fill this form</p>
-        </div>
-        <form v-if="!submittedForm" @submit.prevent="submitForm" class="form-group">
-            <div class="contact-name">
-                <h4>Name*</h4>
-                <label>
-                    <input v-model="formData.name" type="text" name="name" class="form-style" placeholder="Enter your name">
-                </label>
-            </div>
-
-            <div class="contact-email-or-phone">
-                <div class="contact-email">
-                    <h4>Email*</h4>
-                    <label>
-                        <input v-model="formData.email" type="email" name="email" class="form-style"
-                            placeholder="Enter your email">
-                    </label>
+                    <p v-if="!submittedForm"><a class="tlf" href="tel:654140710">+34 654 14 07 10</a> or <a class="whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+34654140710">WhatsApp</a></p>
+                    <p v-if="!submittedForm">If you prefer you can fill this form</p>
                 </div>
-                <div class="contact-phone">
-                    <h4>Phone*</h4>
-                    <label>
-                        <input v-model="formData.phone" type="phone number" name="phone" class="form-style"
-                            placeholder="+34?">
-                    </label>
+                <form v-if="!submittedForm" @submit.prevent="submitForm" class="form-group">
+                    <div class="contact-name">
+                        <h4>Name*</h4>
+                        <label>
+                            <input v-model="formData.name" type="text" name="name" class="form-style"
+                                placeholder="Enter your name">
+                        </label>
+                    </div>
+
+                    <div class="contact-email-or-phone">
+                        <div class="contact-email">
+                            <h4>Email*</h4>
+                            <label>
+                                <input v-model="formData.email" type="email" name="email" class="form-style"
+                                    placeholder="Enter your email">
+                            </label>
+                        </div>
+                        <div class="contact-phone">
+                            <h4>Phone*</h4>
+                            <label>
+                                <input v-model="formData.phone" type="phone number" name="phone" class="form-style"
+                                    placeholder="+34?">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="contact-message">
+                        <h4>Message*</h4>
+                        <label>
+                            <textarea v-model="formData.message" name="message" class="form-style"
+                                placeholder="I'm interested in..."></textarea>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="contact-btn">Contact</button>
+                </form>
+
+                <div v-if="submittedForm" class="contact-submitted-message">
+                    <h4>Thank you for your interest {{ formData.name }} </h4>
+                    <p>I will contact you as soon as possible!</p>
                 </div>
             </div>
-            <div class="contact-message">
-                <h4>Message*</h4>
-                <label>
-                    <textarea v-model="formData.message" name="message" class="form-style"
-                        placeholder="I'm interested in..."></textarea>
-                </label>
-            </div>
-
-            <button type="submit" class="contact-btn">Contact</button>
-        </form>
-
-        <div v-if="submittedForm" class="contact-submitted-message">
-            <h4>Thank you for your interest {{ formData.name }} </h4>
-            <p>I will contact you as soon as possible!</p>
         </div>
     </div>
 </template>
 
 <style scoped>
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+
+}
+
+.modal-content {
+    background-color: #eeeeee;
+    margin: 3% auto;
+    padding: 20px;
+    width: 47.25rem;
+    height: 43.0625rem;
+    border-radius: 40px;
+}
+
+.dark-mode .modal-content {
+    background-color: #434343;
+    color: #e6e6e6;
+}
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    transform: translateY(15px) translateX(-15px);
+}
+
 .contact-title {
     text-align: center;
 
@@ -278,9 +326,18 @@ textarea {
     .contact-title h3 {
         background-size: 80%;
     }
+
+    .modal-content {
+        width: 37.25rem;
+    }
 }
 
 @media (max-width:645px) {
+
+    .modal-content {
+        width: 25.25rem;
+    }
+
     .contact-title h3 {
         background-size: 87%;
     }
@@ -293,6 +350,10 @@ textarea {
 }
 
 @media (max-width: 440px) {
+    .modal-content {
+        width: 21.5rem;
+    }
+
     .contact-title h3 {
         font-size: 50px;
 
