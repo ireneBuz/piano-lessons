@@ -77,7 +77,7 @@ export const whereToStartMetaData = {
 export const indexMetaData = {
     title: `Piano Lessons - Musical Theory - Irene Buceta School`,
     meta: [
-        { name: 'description', content: `Piano classes in Madrid. Musical theory and piano lessons, in-person and online. Learn music with us! Irene Buceta School` },
+        { name: 'description', content: `Piano classes in Madrid. Musical theory and piano lessons in Madrid, in-person and online. Learn music with us! Irene Buceta School` },
         { name: 'keywords', content: `music classes, piano lessons, music theory classes, piano classes, music lessons, Madrid, in-person classes, online classes, Irene Buceta` }
     ]
 }

@@ -29,7 +29,7 @@ export default defineNuxtConfig(() => {
           },
           {
             name: 'description',
-            content: 'Piano classes in Madrid. Musical theory and piano lessons, in-person and online. Learn music with us! Irene Buceta School'
+            content: 'Piano classes in Madrid. Musical theory and piano lesson in Madrid, in-person and online. Learn music with us! Irene Buceta School'
           },
           {
             name: 'keywords',
