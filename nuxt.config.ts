@@ -29,7 +29,7 @@ export default defineNuxtConfig(() => {
           },
           {
             name: 'description',
-            content: 'Piano classes in Madrid. Musical theory and piano lesson in Madrid, in-person and online. Learn music with us! Irene Buceta School'
+            content: 'Piano classes in Madrid. Musical theory and piano lesson in Madrid, in-person and online. Learn music with us! Irene Buceta Piano School'
           },
           {
             name: 'keywords',
@@ -56,7 +56,7 @@ export default defineNuxtConfig(() => {
           //   },
           //   isProduction && { src: 'https://www.googletagmanager.com/gtag/js?id=G-XRT72ZGBB4', defer: true }
         ].filter(Boolean),
-        title: 'Piano Lessons - Musical Theory Classes - Irene Buceta School',
+        title: 'Piano Lessons in Madrid - Musical Theory Classes in Madrid - Irene Buceta Piano School',
         htmlAttrs: {
           lang: 'en'
         },
