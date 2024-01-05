@@ -26,6 +26,11 @@
     <priority>0.6</priority>
   </url>
       <url>
+    <loc>https://pianolessonsmadrid.com/musical-blog</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+      <url>
     <loc>https://pianolessonsmadrid.com/blog/where-to-start</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
