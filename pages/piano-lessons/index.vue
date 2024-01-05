@@ -1,18 +1,11 @@
 <script setup>
 import { gsap } from 'gsap'
-import { useRoute } from 'vue-router';
 import { openModal, closeModal, showModal } from '~/utils/modal'
-import { pianoMetaData } from './../utils/metaData.js'
+import { pianoMadridMetaData } from './../utils/metaData.js'
 
 const { isDarkMode } = defineProps(['isDarkMode']);
 
-const route = useRoute()
-
-let locationId = route.params.location?.charAt(0).toUpperCase() + route.params.location?.slice(1)
-if (!locationId) {
-  locationId = 'Madrid'
-}
-useHead(pianoMetaData(locationId))
+useHead(pianoMadridMetaData)
 
 
 const enter = (el) => {
@@ -42,7 +35,7 @@ const leave = (el, done) => {
     <div class="piano-classes">
       <div class="piano-classes-info">
         <h2>
-          Learn to play the piano with passion and skill {{ locationId !== 'Madrid' ? `from ${locationId}` : '' }}!
+          Learn to play the piano with passion and skill from Madrid!
         </h2>
 
         <p>Customized piano lessons tailored to your level and goals. Whether you're a beginner dreaming of playing your
@@ -52,9 +45,9 @@ const leave = (el, done) => {
           progress in their lessons, they explore classical, contemporary, and original compositions, challenging their
           dexterity and creativity at the piano.</p>
 
-        <p v-if="locationId !== 'Madrid'">Start your lessons from {{ locationId }}.</p>
+        <p>Start your lessons from Madrid.</p>
 
-        <h3 v-if="locationId === 'Madrid'">In-person - 25€/h</h3>
+        <h3>In-person - 25€/h</h3>
         <h3>Online - 20€/h</h3>
         <div class="piano-classes-info-button">
 

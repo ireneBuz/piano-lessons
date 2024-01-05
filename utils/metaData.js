@@ -1,11 +1,28 @@
-export const pianoMetaData = (locationId) => {
-    return ({
-        title: `Piano lessons in ${locationId} - Irene Buceta Piano School`,
-        meta: [
-            { name: 'description', content: `Piano lessons in ${locationId}. Learn music with us! Irene Buceta School` },
-            { name: 'keywords', content: `piano classes, piano lessons, ${locationId}, in-person classes, online classes, Irene Buceta` }
-        ]
-    })
+// export const pianoMetaData = (locationId) => {
+//     return ({
+//         title: `Piano lessons in ${locationId} - Irene Buceta Piano School`,
+//         meta: [
+//             { name: 'description', content: `Piano lessons in ${locationId}. Learn music with us! Irene Buceta School` },
+//             { name: 'keywords', content: `piano classes, piano lessons, ${locationId}, in-person classes, online classes, Irene Buceta` }
+//         ]
+//     })
+// }
+
+export const pianoMadridMetaData = {
+    title: `Piano lessons in Madrid - Irene Buceta Piano School`,
+    meta: [
+        { name: 'description', content: `Piano lessons in Madrid. Learn music with us! Irene Buceta School` },
+        { name: 'keywords', content: `piano classes, piano lessons, Madrid, in-person classes, online classes, Irene Buceta` }
+    ]
+
+}
+export const pianoValenciaMetaData = {
+    title: `Piano lessons in Valencia - Irene Buceta Piano School`,
+    meta: [
+        { name: 'description', content: `Piano lessons in Valencia. Learn music with us! Irene Buceta School` },
+        { name: 'keywords', content: `piano classes, piano lessons, Valencia, in-person classes, online classes, Irene Buceta` }
+    ]
+
 }
 
 export const musicalTheoryMetaData = (locationId) => {
