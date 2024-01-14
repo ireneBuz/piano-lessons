@@ -1,5 +1,12 @@
 export const slides = [
     {
+        imageSrc: '/images/blog5.webp',
+        title: 'Start 2024 playing the piano',
+        excerpt: 'The beginning of a new year offers the perfect opportunity to explore new experiences and acquire skills that enrich our lives. This noble art not only provides aesthetic and creative pleasure but also offers a series of tangible benefits for personal development',
+        readMoreLink: '/blog/start-2024-playing-the-piano',
+        date: 'January 14, 2024'
+    },
+    {
         imageSrc: '/images/blog4.webp',
         title: 'Where to Start',
         excerpt: 'Choosing the right music is essential for any pianist, regardless of their skill level. Playing a piece that suits your level will not only help you improve your skills but also allow you to enjoy the learning process more.Here are some tips for finding the perfect piece',

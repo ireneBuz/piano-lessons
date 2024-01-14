@@ -7,47 +7,51 @@
   </url>
    <url>
     <loc>https://pianolessonsmadrid.com/piano-lessons</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://pianolessonsmadrid.com/musical-theory-lessons</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
     <url>
     <loc>https://pianolessonsmadrid.com/lessons-schedule</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
     <url>
     <loc>https://pianolessonsmadrid.com/courses</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
       <url>
     <loc>https://pianolessonsmadrid.com/musical-blog</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
       <url>
     <loc>https://pianolessonsmadrid.com/blog/where-to-start</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
         <url>
     <loc>https://pianolessonsmadrid.com/blog/improve-your-piano-technique-tips</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
         <url>
     <loc>https://pianolessonsmadrid.com/blog/different-musical-styles-on-the-piano</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
         <url>
     <loc>https://pianolessonsmadrid.com/blog/cognitive-benefits-of-studying-music-theory</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <loc>https://pianolessonsmadrid.com/blog/start-2024-playing-the-piano</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 

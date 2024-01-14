@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { routes } from './utils/routes'
 
 export default defineNuxtConfig(() => {
   const isProduction = process.env.NODE_ENV === 'production';
@@ -11,9 +10,7 @@ export default defineNuxtConfig(() => {
       '~/assets/css/fonts.css',
       '~/assets/css/blog.css'
     ],
-    generate: {
-      routes: routes
-    },
+
     app: {
       pageTransition: { name: 'page', mode: 'out-in' },
       head: {

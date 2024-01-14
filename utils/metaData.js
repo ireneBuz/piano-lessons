@@ -1,14 +1,12 @@
-// export const pianoMetaData = (locationId) => {
-//     return ({
-//         title: `Piano lessons in ${locationId} - Irene Buceta Piano School`,
-//         meta: [
-//             { name: 'description', content: `Piano lessons in ${locationId}. Learn music with us! Irene Buceta School` },
-//             { name: 'keywords', content: `piano classes, piano lessons, ${locationId}, in-person classes, online classes, Irene Buceta` }
-//         ]
-//     })
-// }
 
-export const pianoMadridMetaData = {
+export const indexMetaData = {
+    title: `Piano Lessons in Madrid - Musical Theory Classes in Madrid - Irene Buceta Piano School`,
+    meta: [
+        { name: 'description', content: `Piano classes in Madrid. Musical theory and piano lesson in Madrid, in-person and online. Learn music with us! Irene Buceta Piano School` },
+        { name: 'keywords', content: `music classes, piano lessons, music theory classes, piano classes, music lessons, Madrid, in-person classes, online classes, Irene Buceta` }
+    ]
+}
+export const pianoMetaData = {
     title: `Piano lessons in Madrid - Irene Buceta Piano School`,
     meta: [
         { name: 'description', content: `Piano lessons in Madrid. Learn music with us! Irene Buceta School` },
@@ -16,23 +14,16 @@ export const pianoMadridMetaData = {
     ]
 
 }
-export const pianoValenciaMetaData = {
-    title: `Piano lessons in Valencia - Irene Buceta Piano School`,
+
+
+export const musicalTheoryMetaData = {
+
+    title: "Musical theory lessons in Madrid - Irene Buceta Piano School",
     meta: [
-        { name: 'description', content: `Piano lessons in Valencia. Learn music with us! Irene Buceta School` },
-        { name: 'keywords', content: `piano classes, piano lessons, Valencia, in-person classes, online classes, Irene Buceta` }
+        { name: 'description', content: `Musical theory lessons in Madrid. Learn music with us! Irene Buceta School` },
+        { name: 'keywords', content: `music classes, music theory classes, music lessons, Madrid, in-person classes, online classes, Irene Buceta` }
     ]
 
-}
-
-export const musicalTheoryMetaData = (locationId) => {
-    return ({
-        title: `Musical theory lessons in ${locationId} - Irene Buceta Piano School`,
-        meta: [
-            { name: 'description', content: `Musical theory lessons in ${locationId}. Learn music with us! Irene Buceta School` },
-            { name: 'keywords', content: `music classes, music theory classes, music lessons, ${locationId}, in-person classes, online classes, Irene Buceta` }
-        ]
-    })
 }
 
 export const musicalBlogMetaData = {
@@ -90,11 +81,11 @@ export const whereToStartMetaData = {
         { name: 'keywords', content: `where to start, piano lessons courses, music classes, music theory classes, music lessons, in-person classes, online classes, Irene Buceta` }
     ]
 }
-
-export const indexMetaData = {
-    title: `Piano Lessons in Madrid - Musical Theory Classes in Madrid - Irene Buceta Piano School`,
+export const startIn2024MetaData = {
+    title: `Piano lessons - start 2024 playing the piano - Irene Buceta Piano School`,
     meta: [
-        { name: 'description', content: `Piano classes in Madrid. Musical theory and piano lesson in Madrid, in-person and online. Learn music with us! Irene Buceta Piano School` },
-        { name: 'keywords', content: `music classes, piano lessons, music theory classes, piano classes, music lessons, Madrid, in-person classes, online classes, Irene Buceta` }
+        { name: 'description', content: `start 2024 playing the piano. Courses for Musical theory and piano lessons - In-person and online Irene Buceta School` },
+        { name: 'keywords', content: `start 2024 playing the piano, piano lessons courses, music classes, music theory classes, music lessons, in-person classes, online classes, Irene Buceta` }
     ]
 }
+

@@ -1,11 +1,11 @@
 <script setup>
 import { gsap } from 'gsap'
 import { openModal, closeModal, showModal } from '~/utils/modal'
-import { pianoMadridMetaData } from './../utils/metaData.js'
+import { pianoMetaData } from './../utils/metaData.js'
 
 const { isDarkMode } = defineProps(['isDarkMode']);
 
-useHead(pianoMadridMetaData)
+useHead(pianoMetaData)
 
 
 const enter = (el) => {
