@@ -1,18 +1,11 @@
 <script setup>
 import { gsap } from 'gsap'
-import { useRoute } from 'vue-router';
 import { openModal, closeModal, showModal } from '~/utils/modal'
 import { musicalTheoryMetaData } from './../utils/metaData.js'
 
 const { isDarkMode } = defineProps(['isDarkMode']);
 
-const route = useRoute()
-
-let locationId = route.params.location?.charAt(0).toUpperCase() + route.params.location?.slice(1)
-if (!locationId) {
-  locationId = 'Madrid'
-}
-useHead(musicalTheoryMetaData(locationId))
+useHead(musicalTheoryMetaData)
 
 
 const enter = (el) => {
