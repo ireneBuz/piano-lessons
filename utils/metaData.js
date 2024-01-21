@@ -6,7 +6,7 @@ export const indexMetaData = {
     ]
 }
 export const pianoMetaData = {
-    title: `Piano lessons in Madrid - Irene Buceta Piano School`,
+    title: `Piano lessons in Madrid - Reinforcement lessons - Irene Buceta Piano School`,
     meta: [
         { name: 'description', content: `Piano lessons in Madrid. Learn music with us! Irene Buceta School` },
         { name: 'keywords', content: `piano classes, piano lessons, Madrid, in-person classes, online classes, Irene Buceta` }
@@ -16,7 +16,7 @@ export const pianoMetaData = {
 
 export const musicTheoryMetaData = {
 
-    title: "Music theory lessons in Madrid - Irene Buceta Piano School",
+    title: "Music theory lessons in Madrid - Reinforcement lessons - Irene Buceta Piano School",
     meta: [
         { name: 'description', content: `Music theory lessons in Madrid. Learn music with us! Irene Buceta School` },
         { name: 'keywords', content: `music classes, music theory classes, music lessons, Madrid, in-person classes, online classes, Irene Buceta` }

@@ -44,6 +44,8 @@ const leave = (el, done) => {
           next level. My goal is to make music theory accessible and exciting for everyone, regardless of your level of
           experience.</p>
 
+          <p>Additionally, I offer reinforcement lessons to help you master difficult
+          concepts and overcome challenges, ensuring your progress and success in your music theory studies.</p>
 
         <h3>In-person - 25€/h</h3>
         <h3>Online - 20€/h</h3>

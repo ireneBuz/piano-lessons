@@ -44,7 +44,8 @@ const leave = (el, done) => {
         <p>In piano lessons, students discover the importance of technique, precision, and interpretation. As they
           progress in their lessons, they explore classical, contemporary, and original compositions, challenging their
           dexterity and creativity at the piano.</p>
-
+          <p>Additionally, I offer reinforcement lessons to help you master difficult
+          concepts and overcome challenges, ensuring your progress and success in your piano journey.</p>
 
         <h3>In-person - 25€/h</h3>
         <h3>Online - 20€/h</h3>
