@@ -33,7 +33,7 @@ const leave = (el, done) => {
     <div class="musical-classes">
       <div class="musical-classes-info">
         <h2>
-          Discover the fascinating world of music theory {{ locationId !== 'Madrid' ? `from ${locationId}` : '' }}!
+          Discover the fascinating world of music theory !
         </h2>
 
         <p>Have you always dreamed of understanding music at a deeper level? Would you like to read sheet music, compose
@@ -44,9 +44,8 @@ const leave = (el, done) => {
           next level. My goal is to make music theory accessible and exciting for everyone, regardless of your level of
           experience.</p>
 
-        <p v-if="locationId !== 'Madrid'">Start your lessons from {{ locationId }}.</p>
 
-        <h3 v-if="locationId === 'Madrid'">In-person - 25€/h</h3>
+        <h3>In-person - 25€/h</h3>
         <h3>Online - 20€/h</h3>
         <div class="musical-classes-info-button">
 

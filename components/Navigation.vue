@@ -114,10 +114,10 @@ const leaveForm = (el, done) => {
                         </RouterLink>
                     </div>
                     <div class="dropdown-links">
-                        <RouterLink to="/musical-theory-lessons"
-                            :class="{ 'active-link': $route.path === '/musical-theory-lessons' }"
-                            aria-label="Musical theory">
-                            Musical theory
+                        <RouterLink to="/music-theory-lessons"
+                            :class="{ 'active-link': $route.path === '/music-theory-lessons' }"
+                            aria-label="Music theory">
+                            Music theory
                         </RouterLink>
                     </div>
                 </div>
@@ -158,10 +158,10 @@ const leaveForm = (el, done) => {
                     :class="{ 'active-link': $route.path === '/piano-lessons' }" aria-label="Piano lessons">
                     Piano lessons
                 </RouterLink>
-                <RouterLink to="/musical-theory-lessons" @click="closeMenu"
-                    :class="{ 'active-link': $route.path === '/musical-theory-lessons' }"
-                    aria-label="Musical theory lessons">
-                    Musical theory lessons
+                <RouterLink to="/music-theory-lessons" @click="closeMenu"
+                    :class="{ 'active-link': $route.path === '/music-theory-lessons' }"
+                    aria-label="Music theory lessons">
+                    Music theory lessons
                 </RouterLink>
                 <RouterLink to="/musical-blog" @click="closeMenu"
                     :class="{ 'active-link': $route.path === '/musical-blog' }" aria-label="Blog">

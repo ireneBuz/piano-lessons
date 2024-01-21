@@ -35,7 +35,7 @@ const leave = (el, done) => {
     <div class="piano-classes">
       <div class="piano-classes-info">
         <h2>
-          Learn to play the piano with passion and skill from Madrid!
+          Learn to play the piano with passion and skill !
         </h2>
 
         <p>Customized piano lessons tailored to your level and goals. Whether you're a beginner dreaming of playing your
@@ -45,7 +45,6 @@ const leave = (el, done) => {
           progress in their lessons, they explore classical, contemporary, and original compositions, challenging their
           dexterity and creativity at the piano.</p>
 
-        <p>Start your lessons from Madrid.</p>
 
         <h3>In-person - 25€/h</h3>
         <h3>Online - 20€/h</h3>
