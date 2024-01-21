@@ -1,11 +1,11 @@
 <script setup>
 import { gsap } from 'gsap'
 import { openModal, closeModal, showModal } from '~/utils/modal'
-import { musicalTheoryMetaData } from './../utils/metaData.js'
+import { musicTheoryMetaData } from './../utils/metaData.js'
 
 const { isDarkMode } = defineProps(['isDarkMode']);
 
-useHead(musicalTheoryMetaData)
+useHead(musicTheoryMetaData)
 
 
 const enter = (el) => {
