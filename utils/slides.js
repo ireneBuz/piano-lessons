@@ -1,5 +1,12 @@
 export const slides = [
     {
+        imageSrc: '/images/blog6.webp',
+        title: 'Music at any age?',
+        excerpt: 'Music is an art that welcomes everyone, regardless of the age at which you start its study. Whether you are in your early formative years or seeking new passions in your adult life',
+        readMoreLink: '/blog/music-at-any-age?',
+        date: 'March 15, 2024'
+    },
+    {
         imageSrc: '/images/blog5.webp',
         title: 'Start 2024 playing the piano',
         excerpt: 'The beginning of a new year offers the perfect opportunity to explore new experiences and acquire skills that enrich our lives. This noble art not only provides aesthetic and creative pleasure but also offers a series of tangible benefits for personal development',

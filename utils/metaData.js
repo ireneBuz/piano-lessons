@@ -88,4 +88,12 @@ export const startIn2024MetaData = {
         { name: 'keywords', content: `start 2024 playing the piano, piano lessons courses, music classes, music theory classes, music lessons, in-person classes, online classes, Irene Buceta` }
     ]
 }
+export const musicAtAnyAgeMetaData = {
+    title: `Piano lessons - music at any age - Irene Buceta Piano School`,
+    meta: [
+        { name: 'description', content: `music at any age. Courses for Musical theory and piano lessons - In-person and online Irene Buceta School` },
+        { name: 'keywords', content: `music at any age, piano lessons courses, music classes, music theory classes, music lessons, in-person classes, online classes, Irene Buceta` }
+    ]
+}
+
 
