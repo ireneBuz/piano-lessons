@@ -46,7 +46,7 @@ onMounted(() => {
                 </div>
                 <p> Theory provides the necessary framework to understand music.</p>
                 <div class="info">
-                    <RouterLink to="/musical-theory-lessons">
+                    <RouterLink to="/music-theory-lessons">
                         See options <img src="/images/homeCardsButton.svg" alt=""></RouterLink>
                 </div>
             </div>
