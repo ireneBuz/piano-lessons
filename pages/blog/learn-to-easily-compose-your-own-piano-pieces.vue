@@ -20,7 +20,6 @@ useHead(compositionBenefitsMetaData)
         </div>
         <div class="blog-text">
             <div class="blog-paragraph">
-                <p>**Starting from Scratch:**</p>
                 <p><b>Familiarize Yourself with the Piano:</b> You don’t need any prior experience to start composing. I
                     will help you get acquainted with the keyboard, learning basic hand positions and some basic chords
                     to
@@ -37,7 +36,6 @@ useHead(compositionBenefitsMetaData)
                     music.
                 </p>
 
-                <p>**Benefits of Composition and Improvisation:**</p>
                 <p><b>Creativity Development:</b> Composing and improvising allow you to explore your creativity and
                     express yourself in unique ways. This process will help you develop your own style and discover new
                     facets of your musical talent. In my classes, I foster an environment of experimentation and
@@ -55,20 +53,21 @@ useHead(compositionBenefitsMetaData)
                     and find a sense of achievement and personal satisfaction. My classes are designed for you to enjoy
                     the process and benefit emotionally.</p>
 
-                <p>**Emulating Your Favorite Compositions:**</p>
+                <p><b>Emulating Your Favorite Compositions:</b></p>
                 <p>An excellent way to learn to compose is by emulating your favorite pieces. In our classes, we will
                     analyze the songs you love together, breaking down their chords and progressions. I will teach you
                     to
                     play parts of these pieces on the piano and incorporate those elements into your own compositions.
                     This method is not only educational but also inspiring and motivating.</p>
 
-                <p>**Connecting with Other Musicians:**</p>
+                <p><b>
+                        Connecting with Other Musicians:</b></p>
                 <p>Once you feel more comfortable composing and improvising, I encourage you to share your music with
                     others. I offer opportunities to play in groups, participate in recitals, and collaborate with other
                     students. Musical collaboration can inspire you and take your creativity to new heights, as well as
                     provide you with a rich social experience.</p>
 
-                <p>**Conclusion:**</p>
+                <p><b>Conclusion:</b></p>
                 <p>Learning to compose and improvise on the piano is accessible to everyone, and I am here to guide you
                     every step of the way. From creativity development to emotional well-being, these skills can enrich
                     your life in many ways. You don’t need prior knowledge or expensive equipment; all you need is
