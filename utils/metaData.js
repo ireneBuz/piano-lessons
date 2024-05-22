@@ -93,5 +93,11 @@ export const musicAtAnyAgeMetaData = {
         { name: 'keywords', content: `music at any age, piano lessons courses, music classes, music theory classes, music lessons, in-person classes, online classes, Irene Buceta` }
     ]
 }
-
+export const compositionBenefitsMetaData = {
+    title: `Piano lessons - Learn to Easily Compose Your Own Piano Pieces - Irene Buceta Piano School`,
+    meta: [
+        { name: 'description', content: `Learn to Easily Compose Your Own Piano Pieces. Courses for Musical theory and piano lessons - In-person and online Irene Buceta School` },
+        { name: 'keywords', content: `Learn to Easily Compose Your Own Piano Pieces, piano lessons courses, music classes, music theory classes, music lessons, in-person classes, online classes, Irene Buceta` }
+    ]
+}
 

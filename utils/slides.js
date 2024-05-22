@@ -1,5 +1,12 @@
 export const slides = [
     {
+        imageSrc: '/images/blog7.webp',
+        title: 'Learn to easily compose your own piano pieces',
+        excerpt: 'Composition and improvisation on the piano may seem like skills reserved for advanced musicians, but the truth is that anyone, even without prior knowledge, can learn to create their own pieces.',
+        readMoreLink: '/blog/music-at-any-age?',
+        date: 'March 15, 2024'
+    },
+    {
         imageSrc: '/images/blog6.webp',
         title: 'Music at any age?',
         excerpt: 'Music is an art that welcomes everyone, regardless of the age at which you start its study. Whether you are in your early formative years or seeking new passions in your adult life',
