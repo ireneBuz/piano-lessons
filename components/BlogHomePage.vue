@@ -27,7 +27,7 @@ blogsService.getAllBlogsCards()
     <header>
         <div class="home-blog" :class="{ 'dark-mode': isDarkMode }">
             <div class="title">
-                <RouterLink to="/blog-musical" aria-label="BLOG MUSICAL">
+                <RouterLink to="/musical-blog" aria-label="BLOG MUSICAL">
                     <h2>MUSICAL BLOG</h2>
                 </RouterLink>
             </div>
@@ -36,8 +36,8 @@ blogsService.getAllBlogsCards()
             </div>
             <div class="cards" v-if="!isLoading">
                 <Swiper :slidesPerView="1" :spaceBetween="10" :pagination="{
-                    clickable: true,
-                }" :autoplay="{
+            clickable: true,
+        }" :autoplay="{
             delay: 5000,
         }" :breakpoints="{
             '640': {
