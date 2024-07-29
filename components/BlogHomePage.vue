@@ -5,47 +5,56 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay } from 'swiper/modules';
 import BlogCards from './BlogCards.vue';
-import { slides } from './../utils/slides.js';
 import { RouterLink } from 'vue-router';
+import { ref } from 'vue';
+import blogsService from './../api/BlogsService'
+
 
 const { isDarkMode } = defineProps(['isDarkMode']);
 
 const modules = [Pagination, Autoplay];
-const slidesData = ref(slides);
+const isLoading = ref(true);
+const slides = ref([]);
+blogsService.getAllBlogsCards()
+    .then(({ data }) => {
+        slides.value = data;
+        return isLoading.value = false
+    })
+    .catch(err => console.log('ERROR AL TRAER EL BLOG'))
 </script>
 
 <template>
     <header>
         <div class="home-blog" :class="{ 'dark-mode': isDarkMode }">
             <div class="title">
-                <RouterLink to="/musical-blog" aria-label="MUSICAL BLOG">
+                <RouterLink to="/blog-musical" aria-label="BLOG MUSICAL">
                     <h2>MUSICAL BLOG</h2>
                 </RouterLink>
             </div>
             <div class="sub-title">
                 <p>"Music is a higher revelation than any philosophy." - Beethoven</p>
             </div>
-            <div class="cards">
+            <div class="cards" v-if="!isLoading">
                 <Swiper :slidesPerView="1" :spaceBetween="10" :pagination="{
                     clickable: true,
                 }" :autoplay="{
-    delay: 5000,
-}" :breakpoints="{
-    '640': {
-        slidesPerView: 2,
-        spaceBetween: 10,
+            delay: 5000,
+        }" :breakpoints="{
+            '640': {
+                slidesPerView: 2,
+                spaceBetween: 10,
 
-    },
-    '1150': {
-        slidesPerView: 3,
-        spaceBetween: 30,
+            },
+            '1150': {
+                slidesPerView: 3,
+                spaceBetween: 30,
 
-    },
+            },
 
-}" :modules="modules" class="mySwiper">
-                    <SwiperSlide v-for="(slide, index) in slidesData" :key="index">
-                        <BlogCards :image-src="slide.imageSrc" :title="slide.title" :excerpt="slide.excerpt"
-                            :read-more-link="slide.readMoreLink" :date="slide.date">
+        }" :modules="modules" class="mySwiper">
+                    <SwiperSlide v-for="(slide, index) in slides" :key="index">
+                        <BlogCards :image-src="slide.imageSrc" :title="slide.titleCardEng" :excerpt="slide.excerptEng"
+                            :read-more-link="'/blog/' + slide.readMoreLinkEng" :date="slide.dateEng">
                         </BlogCards>
                     </SwiperSlide>
                 </Swiper>
