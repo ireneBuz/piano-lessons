@@ -25,7 +25,7 @@ const leave = (el, done) => {
 </script>
 
 <template>
-  <section id="clases-piano" :class="{ 'dark-mode': isDarkMode }">
+  <section id="piano-lessons" :class="{ 'dark-mode': isDarkMode }">
 
     <transition @enter="enter" @leave="leave">
       <div v-if="showModal" @close="closeModal">
@@ -39,12 +39,13 @@ const leave = (el, done) => {
         </h2>
 
         <p>Customized piano lessons tailored to your level and goals. Whether you're a beginner dreaming of playing your
-          favorite songs or an intermediate pianist looking to perfect your technique, I will guide you every step of the
+          favorite songs or an intermediate pianist looking to perfect your technique, I will guide you every step of
+          the
           way.</p>
         <p>In piano lessons, students discover the importance of technique, precision, and interpretation. As they
           progress in their lessons, they explore classical, contemporary, and original compositions, challenging their
           dexterity and creativity at the piano.</p>
-          <p>Additionally, I offer reinforcement lessons to help you master difficult
+        <p>Additionally, I offer reinforcement lessons to help you master difficult
           concepts and overcome challenges, ensuring your progress and success in your piano journey.</p>
 
         <h3>In-person - 25€/h</h3>

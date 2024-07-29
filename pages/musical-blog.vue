@@ -1,9 +1,19 @@
 <script setup>
-import { slides } from './../utils/slides.js';
+import { ref } from 'vue';
 import { musicalBlogMetaData } from './../utils/metaData.js'
+import blogsService from './../api/BlogsService'
+
 const { isDarkMode } = defineProps(['isDarkMode']);
 
 useHead(musicalBlogMetaData)
+
+const slides = ref([]);
+
+blogsService.getAllBlogsCards()
+    .then(({ data }) => {
+        return slides.value = data;
+    })
+    .catch(err => console.log('ERROR AL TRAER EL BLOG'))
 </script>
 
 
@@ -16,10 +26,11 @@ useHead(musicalBlogMetaData)
             <div class="sub-title">
                 <p>"Music is a higher revelation than any philosophy." - Beethoven</p>
             </div>
+
             <div class="cards">
                 <div v-for="(slide, index) in slides" :key="index">
-                    <BlogCards :image-src="slide.imageSrc" :title="slide.title" :excerpt="slide.excerpt"
-                        :read-more-link="slide.readMoreLink" :date="slide.date">
+                    <BlogCards :image-src="slide.imageSrc" :title="slide.titleCardEng" :excerpt="slide.excerptEng"
+                        :read-more-link="'/blog/' + slide.readMoreLinkEng" :date="slide.dateEng">
                     </BlogCards>
                 </div>
             </div>
@@ -45,6 +56,8 @@ useHead(musicalBlogMetaData)
     margin-left: 10px;
     margin-right: 10px;
 }
+
+
 
 .title h2 {
     color: rgb(23, 23, 23);

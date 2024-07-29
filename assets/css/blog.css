@@ -36,6 +36,7 @@
 .blog-header .title-header p {
     font-family: 'Founders-Grotesk-regular';
     font-size: 24px;
+    margin-bottom: 0;
     margin-top: 0;
 }
 
@@ -60,6 +61,37 @@
     display: block;
 }
 
+
+.blog-header .title-header .info a,
+.blog-info .info-end a {
+    text-decoration: none;
+    color: #fc81f2;
+    padding: 13px 19px 8px 19px;
+    border-radius: 30px;
+    border: 1px solid #fc81f2;
+    font-family: 'Founders-Grotesk-medium';
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.blog-header .title-header .info a:hover,
+.blog-info .info-end a:hover {
+    color: #2d2d2d;
+    background: var(--main-colors-gradient, linear-gradient(30deg, #fc81f2 13.4%, #cd59ff 75.6%));
+}
+
+.blog-header .title-header .info,
+.blog-info .info-end {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.blog-info .info-end {
+    justify-content: center
+}
+
 @media (max-width: 1100px) {
     .blog-header {
         height: 300px;
@@ -78,9 +110,17 @@
 }
 
 
+@media (max-width: 870px) {
+
+    .blog-header .title-header a,
+    .blog-info .info-end a {
+        margin-left: 0px;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+}
 
 @media (max-width: 840px) {
-
     .blog-header .image-header {
         width: 100%;
         border-radius: 0;
@@ -106,5 +146,35 @@
     .blog-header .title-header h2 {
         font-family: 'Founders-Grotesk-medium';
         font-size: 32px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .blog-header .title-header .info a,
+    .blog-info .info-end a {
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 13px 19px 8px 19px;
+        border-radius: 30px;
+        border: 0;
+        font-family: 'Founders-Grotesk-medium';
+        background: var(--main-colors-gradient, linear-gradient(30deg, #3D73EB 13.4%, #DE8FFF 86.6%));
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .blog-header .title-header .info a:hover,
+    .blog-info .info-end a:hover {
+        background: var(--main-colors-gradient, linear-gradient(30deg, #1f53c3 13.4%, #cd59ff 75.6%));
+    }
+
+
+    .blog-header .title-header .info,
+    .blog-info .info-end {
+        padding-top: 5px;
+        margin-top: 15px;
+        margin-left: 0;
+        justify-content: center;
     }
 }
