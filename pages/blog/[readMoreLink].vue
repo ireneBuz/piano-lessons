@@ -30,7 +30,7 @@ watchEffect(() => {
 </script>
 
 <template>
-  <section :id=route.readMoreLink :class="[{ 'dark-mode': isDarkMode }, 'blog-info']">
+  <section v-if="slides.articleEng" :id=route.readMoreLink :class="[{ 'dark-mode': isDarkMode }, 'blog-info']">
     <div class="blog-header">
       <div class="image-header">
         <img :src=slides.imageSrc alt="">
